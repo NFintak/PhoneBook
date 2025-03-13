@@ -11,8 +11,10 @@ import java.util.*;
 public class PhoneBook {
 
     private final Map<String, List<String>> phonebook;
+    private List<String> numbers;
 
     public PhoneBook(Map<String, List<String>> map) {
+        this.numbers = new List<>(numbers);
         this.phonebook = new HashMap<>(map);
     }
 
@@ -21,10 +23,11 @@ public class PhoneBook {
     }
 
     public void add(String name, String phoneNumber) {
-        this.phonebook.put(name, phoneNumber);
+        //this.phonebook.put();
     }
 
     public void addAll(String name, String... phoneNumbers) {
+
     }
 
     public void remove(String name) {
@@ -46,10 +49,12 @@ public class PhoneBook {
     }
 
     public List<String> getAllContactNames() {
-        return null;
+        return
+        //return null;
     }
 
     public Map<String, List<String>> getMap() {
-        return null;
+        return this.phonebook;
+        //return null;
     }
 }
